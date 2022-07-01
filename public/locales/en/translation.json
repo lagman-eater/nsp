@@ -1,0 +1,48 @@
+{
+    "Header": {
+        "Tel": "request a call",
+        "List": {
+            "Item1": "Services",
+            "Item2": "DPC Services",
+            "Item3": "VPS/Hosting",
+            "Item4": "About",
+            "Item5": "Information centre"
+        }
+    },
+    "MainPage": {
+        "Main": {
+            "Title": "About NSP",
+            "Text": "Leader in the field of information technology, system integration, guaranteed energy supply systems and consulting. The company's engineers have undergone in-depth training at manufacturing plants and distribution platforms in Moscow, Almaty, France, Belgium, Germany and have the appropriate certificates. The company is authorized to represent and service the products of such leading world manufacturers as: ARS - the champion among manufacturers of uninterruptible power supplies; SDMO - diesel and petrol generating sets; Fujitsu - computer and server equipment, storage systems, virtualization solutions; CISCO - network equipment ...",
+            "More": "More"
+        },
+        "Section": {
+            "Title": "The main directions of the company",
+            "List": {
+                "Item1": {
+                    "Title": "NETWORK TECHNOLOGIES",
+                    "Text1": "Unified communications",
+                    "Text2": "Network equipment",
+                    "Text3": "Smart building"
+                },
+                "Item2": {
+                    "Title": "SERVERS AND STORAGE",
+                    "Text1": "Storage systems",
+                    "Text2": "Fujitsu Servers"
+                },
+                "Item3": {
+                    "Title": "ENERGY SUPPLY",
+                    "Text1": "Uninterruptible power supplies",
+                    "Text2": "Gensets",
+                    "Text3": "Schneider Electric equipment"
+                }
+            }
+        },
+        "Car": {
+            "Title": ""
+        },
+        "Bot": {
+            "Title": "",
+            "Text": ""
+        }
+    }
+}

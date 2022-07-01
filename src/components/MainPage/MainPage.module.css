@@ -1,0 +1,87 @@
+.cont main{
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 0;
+    /* background-position: right; */
+}
+.left{
+    width: 40vw;
+    padding: 10px 40px;
+}
+.left h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    color: #091133;
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+.left div{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #505F98;
+    font-size: 1em;
+}
+.right{ 
+    width: 50%;
+}
+.right img{
+    width: 100%;
+    aspect-ratio: 1000 / 893;
+}
+.cont section{ 
+    width: 100%;
+    margin: 100px 0;
+}
+.cont section h3{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #091133;
+}
+.sectionList{
+    display: flex;
+    justify-content: space-around;
+}
+.sectionItem{
+    display: flex;
+    flex-direction: column;
+}
+.sectionItem h6{
+    margin: 8px 0;
+    font-size: 1.2em;
+    color: #091133;;
+}
+.sectionItem ul{
+    margin: 4px 0;
+    padding-left: 20px;
+}
+.sectionItem ul li{
+    list-style-type: square;
+    color: #5D6970;
+    margin: 2px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    /* list-style: ; */
+}
+
+.carousel{
+    margin: 100px 20vw;
+}
+.carItem{
+    width: 30vw;
+}
+
+.swiperSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.swiper-button-prev{
+    color: #818181 !important;
+}
