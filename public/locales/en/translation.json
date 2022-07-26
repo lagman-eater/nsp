@@ -38,11 +38,11 @@
             }
         },
         "Car": {
-            "Title": ""
+            "Title": "Our partners"
         },
         "Bot": {
-            "Title": "",
-            "Text": ""
+            "Title": "We will be happy to answer all your questions and suggestions!",
+            "Text": "Send us a message"
         }
     }
 }

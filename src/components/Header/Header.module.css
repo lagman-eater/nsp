@@ -10,14 +10,15 @@
     /* font-family: 'Hind', sans-serif; */
 }
 .upper{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .tel{
     font-family: 'Alata', sans-serif;
-    font-size: 45px;
+    font-size: 2.8em;
     /* aspect-ratio: 518/66;
     height: 66px; */
 }
@@ -47,6 +48,7 @@
     height: max-content;
     padding: 12px 0;
     display: flex;
+    align-items: center;
     /* justify-content: space-between; */
 }
 .list{
@@ -83,8 +85,8 @@
 }
 
 @media all and (max-width: 1024px){
-    .tel{
-        font-size: 5vw;
+    .header{
+        /* font-size: xpx; */
     }.navLink{
         font-size: 2vw;
     }

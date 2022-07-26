@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './MainPage.module.css'
+import '../../index.css'
 import { useTranslation } from 'react-i18next'
 import bgMain from '../../images/bgMain.png'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -60,6 +61,7 @@ export default function MainPage() {
         </div>
       </section>
       <div className={style.carousel}>
+        <h1>{t('MainPage.Car.Title')}</h1>
         <Swiper
           // slidesPerView={1}
           // spaceBetween={20}
@@ -74,21 +76,26 @@ export default function MainPage() {
           // loop={true}
           autoHeight={false}
           navigation={true}
+          loop={true}
           modules={[Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide className={style.swiperSlide}><img src={car1} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car2} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car3} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car4} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car5} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car6} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car7} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car8} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car9} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car10} className={style.carItem} /></SwiperSlide>
-          <SwiperSlide className={style.swiperSlide}><img src={car11} className={style.carItem} /></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.se.com/ww/en/'><img src={car1} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.juniper.net/'><img src={car2} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.cisco.com/'><img src={car3} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.microsoft.com/en-us/'><img src={car4} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.kohler-sdmo.com/EN'><img src={car5} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.apc.com/kz/ru/'><img src={car6} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.siapmicros.com/en/'><img src={car7} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.dkc.ru/ru/'><img src={car8} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.dell.com/ru-ru'><img src={car9} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://www.hpe.com/us/en/home.html'><img src={car10} className={style.carItem}/></a></SwiperSlide>
+          <SwiperSlide className={style.swiperSlide}><a href='https://metos.at/ru/'><img src={car11} className={style.carItem}/></a></SwiperSlide>
         </Swiper>
+      </div>
+      <div className={style.bot}>
+        <h1>{t('MainPage.Bot.Title')}</h1>
+        <div>{t('MainPage.Bot.Text')}</div>
       </div>
     </div>
   )
