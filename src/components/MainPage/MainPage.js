@@ -6,7 +6,7 @@ import bgMain from '../../images/bgMain.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 import car1 from '../../images/mainCar1.png'
 import car2 from '../../images/mainCar2.png'
 import car3 from '../../images/mainCar3.png'
@@ -63,17 +63,6 @@ export default function MainPage() {
       <div className={style.carousel}>
         <h1>{t('MainPage.Car.Title')}</h1>
         <Swiper
-          // slidesPerView={1}
-          // spaceBetween={20}
-          // slidesPerGroup={2}
-          // centeredSlides={true}
-          // loopFillGroupWithBlank={true}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          // centeredSlides={false}
-          // centerInsufficientSlides={true}
-          // loop={true}
           autoHeight={false}
           navigation={true}
           loop={true}

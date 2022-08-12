@@ -2,7 +2,7 @@
     z-index: 10;
     height: max-content;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
     /* font-family: 'Alata', sans-serif; */
@@ -13,12 +13,16 @@
     /* justify-content: space-around; */
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+.upper>div{
+    margin: 0px 30px;
 }
 .tel{
     font-family: 'Alata', sans-serif;
-    font-size: 2.8em;
+    font-size: 2.5em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* aspect-ratio: 518/66;
     height: 66px; */
 }
@@ -32,7 +36,7 @@
     width: max-content;
     color: #fff;
     background-color: #3083B2;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 70px;
     height: max-content;
     letter-spacing: 2px;
@@ -41,6 +45,9 @@
 .call:hover{
     color: #3083B2;
     background-color: hsl(202, 58%, 80%);
+}
+.iconCont{
+    display: none;
 }
 .nav{
     background-color: #3083B2;
@@ -54,7 +61,7 @@
 .list{
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -62,13 +69,20 @@
 }
 .listItem{
     list-style-type: none;
+    margin: 0px 30px;
 }
 .navLink{
     font-family: 'Hind', sans-serif;
     font-weight: 400; 
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
+}
+.burgerMenu{
+    display: none;
+}
+.burgerList{
+    display: none;
 }
 .language{
     display: flex;
@@ -83,18 +97,121 @@
     font-size: 2em;
     cursor: pointer;
 }
-
-@media all and (max-width: 1024px){
+@media all and (max-width: 1125px){
     .header{
-        /* font-size: xpx; */
-    }.navLink{
-        font-size: 2vw;
+        font-size: 14px;
+    }
+    .list{
+        justify-content: space-around;
+    }
+    .listItem{
+        margin: 0px 10px;
     }
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 1024px){
+    .nav{
+        padding: 8px 0;
+    }
     .tel{
-        font-size: 4vw;
-    }.navLink{
+        font-size: 2.2em;
+    }
+    .call{
+        padding: 10px 30px !important;
+    }
+    .listItem{
+        margin: 0;
+    }
+    .logo img{
+        width: 13vw;
+    }
+
+    /* .navLink{
+        font-size: 1.5em;
+    } */
+}
+@media all and (max-width: 768px){
+    .upper{
+        justify-content: space-around;
+    }
+    .list{
+        display: none;
+    }
+    .logo img{
+        width: 15vw;
+    }
+    .nav{
+        justify-content: space-between;
+        padding: 4px 0;
+    }
+    .burgerList{
+        display: block;
+    }
+    .burgerList li{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 15px;
+    }
+    .call{
+        padding: 5px 3vw !important;
         font-size: 2vw;
+    }
+    .language{
+        margin-right: 10vw;
+    }
+    .burgerMenu{
+        display: block;
+        margin-left: 10vw;
+    }
+    .burgerList{
+        background-color: #3083B2;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: auto;
+        overflow: hidden;
+        max-height: 0;
+        /* top: 0; */
+    }
+    .burgerList li{
+        margin-left: 12vw;
+        list-style-type: none;
+        color: #fff;
+    }
+    .language{
+        text-align: end;
+    }
+    .upper>div{
+        margin: 0px 10px;
+    }
+    .tel{
+        font-size: 3.5vw;
+    }
+    .navLink{
+        font-size: 1.1em;
+    }
+}
+@media all and (max-width: 425px){
+    .header nav{
+        padding: 0;
+    }
+    .call{
+        display: none;
+    }
+    .iconCont{
+        display: block;
+        width: 20px;
+    }
+    .icon{
+        color: #3083B2;
+    }
+    .logo img{
+        width: 20vw;
+    }
+    .tel{
+        font-size: 1.3em;
     }
 }

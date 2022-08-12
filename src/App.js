@@ -1,21 +1,15 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ScrollToTop from './components/ScrollToTop';
-import Main from './components/Main';
+import { Route, Routes } from 'react-router-dom'
+import Main from './components/Main'
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Switch>
-
-        <Route path="/">
-          <Main />
-        </Route>
-
-      </Switch>
-    </Router>
-  );
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/header" element={<Header />} />
+    </Routes>
+  )
 }
 
 export default App;

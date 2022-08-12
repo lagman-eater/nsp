@@ -1,14 +1,17 @@
 import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import './i18next';
+import { HashRouter } from 'react-router-dom';
+import './i18next'
 
-ReactDOM.render(
-  <Suspense fallback={(<div>Loading ~~~</div>)}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Suspense>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <HashRouter>
+      <Suspense fallback="loading">
+        <App />
+      </Suspense>
+    </HashRouter>
+  </React.StrictMode>
 );

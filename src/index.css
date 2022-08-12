@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Hind&family=Righteous&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Hind&family=Righteous&family=Roboto:wght@400;500;700&display=swap');
 /* font-family: 'Alata', sans-serif;
 font-family: 'Hind', sans-serif;
 font-family: 'Righteous', cursive;
@@ -19,3 +19,41 @@ code {
 .swiper-wrapper{
   align-items: center;
 }
+.swiper-slide{
+  user-select: none;
+}
+.burger-ul-animation__open{
+  animation: burgerSlideOpen .3s linear forwards;
+}
+.burger-ul-animation__close{
+  animation: burgerSlideClose .3s linear forwards;
+}
+@keyframes burgerSlideOpen{
+  0%{
+    max-height: 0;
+  }
+  /* 99%{
+    height: max-content;
+  } */
+  100%{
+    /* height: calc(max-content - 0%); */
+    max-height: 200px;
+  }
+}
+@keyframes burgerSlideClose{
+  from{
+    max-height: 200px;
+      /* height: calc(max-content - 0%); */
+  }to{
+    max-height: 0px;
+  }
+}
+/* @media all and (max-width: 425px){
+  .swiper{
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+  .swiper-slide img{
+    height: 100%;
+  }
+} */

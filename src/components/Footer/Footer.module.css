@@ -23,10 +23,12 @@
 .item ul li {
     margin: 10px 0;
     list-style: none;
+    font-size: 1em;
 }
 
 .item ul li a {
     text-decoration: none;
+    font-size: 1em;
     color: #c8c8c8;
 }
 
@@ -44,9 +46,93 @@
     justify-content: space-between;
 }
 
-.bot div:first-child {
+.bot>div:first-child {
     color: #C8C8C8;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 0.9em;
+}
+.bot section{
+    display: flex;
+}
+.bot section div{
+    margin: 0 10px;
+}
+.bot svg{
+    color: #B0B8BC;
+}
+@media all and (max-width: 1024px){
+    .cont{
+        padding: 60px 8vw;
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 768px){
+    .cont{
+        padding: 60px 4vw;
+        font-size: 14px;
+    }
+    .item:nth-child(2) {
+        /* width: 10%; */
+    }
+    .item:nth-child(2) img{
+
+    }
+}
+@media all and (max-width: 620px){
+    .cont{
+        padding: 30px 1.5vw;
+        font-size: 14px;
+    }
+    .upper{
+        display: grid;
+        grid-template: "a b"
+                       "c c";
+        grid-template-columns: 1fr 1fr;
+        /* display: block;
+        justify-self: center;
+        align-self: center; */
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .item{
+        justify-self: center;
+
+    }
+    .upper .item:nth-child(1){
+        grid-area: a;
+    }
+    .upper .item:nth-child(2){
+        grid-area: c;
+        margin-top: 60px;
+    }
+    .upper .item:nth-child(3){
+        grid-area: b;
+    }
+}
+@media all and (max-width: 425px){
+    .cont{
+        font-size: 13px;
+    }
+    .upper .item:nth-child(2){
+        grid-area: c;
+        margin-top: 35px;
+        /* justify-self: center; */
+    }
+    .bot section div{
+        margin: 0 7px;
+    }
+    .upper{
+        gap: 10px;
+    }
+    .item:nth-child(1){
+        justify-self: start;
+        text-align: start;
+        margin-left: 5vw;
+    }
+    .item:nth-child(3){
+        text-align: end;
+        justify-self: end;
+        margin-right: 5vw;
+    }
 }
