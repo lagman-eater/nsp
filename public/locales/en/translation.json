@@ -7,7 +7,22 @@
             "Item3": "VPS/Hosting",
             "Item4": "About",
             "Item5": "Information centre"
+        },
+        "InnerList": {
+            "Item1": "Projects",
+            "Item2": "Partenrs",
+            "Item3": "Contacts",
+            "Item4": "News blog",
+            "Item5": "Photo/Video",
+            "Item6": "Excursion to the data center"
         }
+    },
+    "Footer": {
+        "Contacts": "Contacts:",
+        "Tel": "tel:",
+        "Coor": "Coordinates:",
+        "Adress1": "Kyrgyz Republic, Chui,",
+        "Adress2": "v. Lebedinovka, Lenina 262"
     },
     "MainPage": {
         "Main": {
@@ -45,11 +60,95 @@
             "Text": "Send us a message"
         }
     },
-    "Footer": {
-        "Contacts": "Contacts:",
-        "Tel": "tel:",
-        "Coor": "Coordinates:",
-        "Adress1": "Kyrgyz Republic, Chui,",
-        "Adress2": "v. Lebedinovka, Lenina 262"
+    "Services": {
+        "Title": "Company Services",
+        "List": {
+            "Item1": {
+                "Title": "Uninterruptible power supplies",
+                "Text": "NSP Ltd. is an authorized company and service center of APC by Schneider Electric in Kyrgyzstan. The company has engineers who have received intensive training at the APC Center in Moscow."
+            },
+            "Item2": {
+                "Title": "Generator Plants",
+                "Text": "NSP Ltd. is an authorized company and service center in Kyrgyzstan, Uzbekistan and Tajikistan from the French manufacturer of generators SDMO Industries.The company has engineers who have passed an intensive training at the factory SDMO in Brest, France."
+            },
+            "Item3": {
+                "Title": "Schneider Electric equipment",
+                "Text": "Many years of partnership with Europe's leading manufacturer of a wide range of equipment for power management systems has allowed NSP to take an active position in the energy sector"
+            },
+            "Item4": {
+                "Title": "Intelligent building",
+                "Text": "NSP provides smart home solutions of any complexity. The company's engineers were trained in Belgium, Almaty and Perm."
+            },
+            "Item5": {
+                "Title": "Fujitsu servers",
+                "Text": "In a dynamic data center, any service can run on any system. Services can be redistributed between systems very quickly. The first step to creating a dynamic data center is to eliminate the rigid binding of services to specific hardware platforms - virtualization."
+            },
+            "Item6": {
+                "Title": "Data Storage Systems",
+                "Text": "NSP is a partner of EMC, a leader in providing versatile data storage, backup, protection and management solutions that include: Systems - a broad line of tiered storage platforms and technologies."
+            },
+            "Item7": {
+                "Title": "Сетевое Оборудование",
+                "Text": "Компания NSP предлагает ряд сетевых решений на базе оборудования CISCO. Cisco - это самый обширный в отрасли портфель аппаратных средств, используемых для строительства информационных сетей и предоставления доступа к ним, плюс операционная система IOS"
+            }
+        }
+    },
+    "VPS": {
+        "Upper": {
+            "Title": "Manage your Data Center ",
+            "Item1": "Easy, convenient and reliable integration of cloud infrastructure into the IT infrastructure of the company with deep customization",
+            "Item2": "Deploy infrastructure in one click with the help of our specialists or in-house",
+            "Item3": "Ability to flexibly and quickly configure the infrastructure to your task",
+            "Item4": "Reduce capital and operating expenses by saving on equipment and licenses",
+            "Item5": "Low Prices. We offer competitive pricing for cloud resources",
+            "Item6": "Free test operation for 3 months"
+        },
+        "Bot": {
+            "Item1": {
+                "Title": "High quality",
+                "Text": "Your project will always work steadily thanks to the high level of quality of our service."
+            },
+            "Item2": {
+                "Title": "Modern equipment",
+                "Text": "State-of-the-art server equipment located in a reliable data center."
+            },
+            "Item3": {
+                "Title": "Квалифицированный персонал",
+                "Text": "Быстро получите ответ на любой ваш вопрос от квалифицированных системых администраторов."
+            }
+        }
+    },
+    "Projects": {
+        "Title": "Projects",
+        "CardList": {
+            "Card1": {
+                "Title": "Construction of the first commercial data center in Bishkek",
+                "Text": "In February 2018, the first new unique commercial data center in Bishkek was commissioned. The starting capacity of the data center is 400 Kva. The existing load of the data center is 150 Kva."
+            },
+            "Card2": {
+                "Title": "A new look at the weather with the PESSL Instruments and Siap+Micros solution",
+                "Text": "Self-sufficiency in the agricultural sector is an important issue for any state. New IT technologies in the field of weather observation, make it possible to solve any challenges of changing conditions."
+            },
+            "Card3": {
+                "Title": "АЗС Газпром Нефть Азии готовы к перебоям электричества",
+                "Text": "В 2011 г. компания «NSP» выиграла конкурс, объявленный компанией «Газпром Нефть Азия» на поставку генераторных установок для заправочных станций Кыргызстана. Цель данного проекта была направлена на обеспечение гарантированной и бесперебойной работы заправочных станций"
+            },
+            "Card4": {
+                "Title": "Строительство подстанции 10кв в Аэропорту \"Манас\"",
+                "Text": "В 2010 году, международный аэропорт «Манас», с целью соответствия мировым стандартам Международной Организации Гражданской Авиации, объявил конкурс на модернизацию распределительных устройств в аэровокзальном комплексе."
+            },
+            "Card5": {
+                "Title": "Проект в отеле HYATT",
+                "Text": "ОсОО \"NSP\" выиграло международные конкурсные торги на поставку ДГУ (дизельная генераторная установка) для четырех звездочного отеля Хаятт в Бишкеке."
+            },
+            "Card6": {
+                "Title": "Проект по обеспечению бесперебойного питания Международного Аэропорта Манас.",
+                "Text": "Завершен еще один проект с участием APC by Schneider Electric и его партнера ОсОО «NSP» в Международном Аэропорте «Манас». Реализация этого проекта позволила Заказчику подняться на высокий уровень в системе стандартизации гарантированного электропитания."
+            },
+            "Card7": {
+                "Title": "Автоматика и ИБП для стекольного завода Интергласс",
+                "Text": "В 2011 году при финансовой поддержке Европейского Банка Реконструкции и Развития, Стекольный завод провел тендер на поставку и монтаж оборудования для автоматизации и обеспечения бесперебойного электропитания."
+            }
+        } 
     }
 }

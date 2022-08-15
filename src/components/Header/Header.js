@@ -5,7 +5,7 @@ import logo from '../../images/logoHead.png'
 import { NavLink, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Hamburger from 'hamburger-react'
-import {IoCall} from 'react-icons/io5'
+import { IoCall } from 'react-icons/io5'
 
 export default function Header() {
   const { t, i18n } = useTranslation()
@@ -20,15 +20,29 @@ export default function Header() {
         </div>
         <div className={style.tel}>+996 (312) 97‒61‒58</div>
         <div className={style.call}>{t('Header.Tel')}</div>
-        <div className={style.iconCont}><a href='javascript:void(0)'><IoCall className={style.icon}/></a></div>
+        <div className={style.iconCont}><a href='javascript:void(0)'><IoCall className={style.icon} /></a></div>
       </div>
       <nav className={style.nav}>
         <ul className={style.list}>
-          <li className={style.listItem}><NavLink className={style.navLink} to='/header'>{t('Header.List.Item1')}</NavLink></li>
+          <li className={style.listItem}><NavLink className={style.navLink} to='/services'>{t('Header.List.Item1')}</NavLink></li>
           <li className={style.listItem}><NavLink className={style.navLink} to=''>{t('Header.List.Item2')}</NavLink></li>
-          <li className={style.listItem}><NavLink className={style.navLink} to=''>{t('Header.List.Item3')}</NavLink></li>
-          <li className={style.listItem}><NavLink className={style.navLink} to=''>{t('Header.List.Item4')}</NavLink></li>
-          <li className={style.listItem}><NavLink className={style.navLink} to=''>{t('Header.List.Item5')}</NavLink></li>
+          <li className={style.listItem}><NavLink className={style.navLink} to='/vps'>{t('Header.List.Item3')}</NavLink></li>
+          <li className={style.listItem}>
+            <a className={style.navLink} href='javascript:void(0)'>{t('Header.List.Item4')}</a>
+            <ul className={style.innerList}>
+              <li className={style.innerItem}><Link to='/projects'>{t('Header.InnerList.Item1')}</Link></li>
+              <li className={style.innerItem}><Link to=''>{t('Header.InnerList.Item2')}</Link></li>
+              <li className={style.innerItem}><Link to=''>{t('Header.InnerList.Item3')}</Link></li>
+            </ul>
+          </li>
+          <li className={style.listItem}>
+            <a className={style.navLink} href=''>{t('Header.List.Item5')}</a>
+            <ul className={style.innerList}>
+              <li className={style.innerItem}><Link to=''>{t('Header.InnerList.Item4')}</Link></li>
+              <li className={style.innerItem}><Link to=''>{t('Header.InnerList.Item5')}</Link></li>
+              <li className={style.innerItem}><Link to=''>{t('Header.InnerList.Item6')}</Link></li>
+            </ul>
+          </li>
         </ul>
         <div className={style.burgerMenu}>
           <Hamburger
